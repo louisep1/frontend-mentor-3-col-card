@@ -26,8 +26,8 @@ body {
 .grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  width: 70rem;
-  height: 40rem;
+  width: 920px;
+  height: 500px;
   /* !!!! not sure here if fixed width or percentages is better.... maybe the latter */
   /* width: 90%;
   height: 60%; */
@@ -50,34 +50,39 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 50px;
+  justify-content: space-between;
+  padding: 45px;
 }
 
 .grid img {
-  width: 100px;
+  width: 65px;
 }
 
 .grid h1 {
   text-transform: uppercase;
   font-family: 'Big Shoulders Display', cursive;
+  font-size: 2rem;
   color: var(--very-light-gray);
 }
 
 .grid p {
   color: var(--transparent-white);
+  line-height: 1.6;
+  font-size: 15px;
 }
 
 .btn {
-  padding: 20px;
-  width: 10rem;
+  padding: 15px 30px;
+  /* width: 10rem; */
   font-size: 15px;
+  width: fit-content;
   border-radius: 30px;
   border: none;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
 .grid .btn {
-  margin-top: 40px;
+  margin-top: 80px;
   background: var(--very-light-gray);
 }
 
