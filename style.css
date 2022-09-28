@@ -77,10 +77,9 @@ body {
   font-size: 15px;
   width: fit-content;
   border-radius: 30px;
-
-  /* !!! maybe need to take off some padding because of this */
   border: transparent 3px solid;
   font-family: 'Lexend Deca', sans-serif;
+  transition: 0.2s;
 }
 
 .grid .btn {
@@ -93,6 +92,7 @@ body {
   border: var(--very-light-gray) 3px solid;
   color: var(--transparent-white);
   background: transparent;
+  transition: 0.2s;
 }
 
 .orange .btn {
