@@ -72,18 +72,26 @@ body {
 }
 
 .btn {
-  padding: 15px 30px;
-  /* width: 10rem; */
+  padding: 10px 25px;
   font-size: 15px;
   width: fit-content;
   border-radius: 30px;
-  border: none;
+
+  /* !!! maybe need to take off some padding because of this */
+  border: transparent 3px solid;
   font-family: 'Lexend Deca', sans-serif;
 }
 
 .grid .btn {
   margin-top: 80px;
   background: var(--very-light-gray);
+}
+
+.grid .btn:hover {
+  cursor: pointer;
+  border: var(--very-light-gray) 3px solid;
+  color: var(--transparent-white);
+  background: transparent;
 }
 
 .orange .btn {
