@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --very-dark-cyan: hsl(179, 100%, 13%);
+  --transparent-white: hsla(0, 0%, 100%, 0.75);
+  --very-light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--very-light-gray);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 70rem;
+  height: 40rem;
+  /* !!!! not sure here if fixed width or percentages is better.... maybe the latter */
+  /* width: 90%;
+  height: 60%; */
+}
+
+.orange {
+  background: var(--bright-orange);
+  border-radius: 10px 0 0 10px;
+}
+
+.cyan {
+  background: var(--dark-cyan);
+}
+
+.dark {
+  background: var(--very-dark-cyan);
+  border-radius: 0 10px 10px 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 50px;
+}
+
+.grid img {
+  width: 100px;
+}
+
+.grid h1 {
+  text-transform: uppercase;
+  font-family: 'Big Shoulders Display', cursive;
+  color: var(--very-light-gray);
+}
+
+.grid p {
+  color: var(--transparent-white);
+}
+
+.btn {
+  padding: 20px;
+  width: 10rem;
+  font-size: 15px;
+  border-radius: 30px;
+  border: none;
+}
+
+.grid .btn {
+  margin-top: 40px;
+  background: var(--very-light-gray);
+}
+
+.orange .btn {
+  color: var(--bright-orange);
+}
+
+.cyan .btn {
+  color: var(--dark-cyan);
+}
+
+.dark .btn {
+  color: var(--very-dark-cyan);
+}
